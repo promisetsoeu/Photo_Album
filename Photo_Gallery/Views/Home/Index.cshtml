@@ -1,0 +1,54 @@
+﻿@model Photo_Gallery.Models.User
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+
+<!-- main -->
+<div class="main">
+    <canvas id="myCanvas"></canvas>
+    <div class="main-w3l">
+        <h1 class="logo-w3">Photo Gallary</h1>
+
+        <div class="w3layouts-main2">
+            <h3>Register Now</h3>
+            <form action="#" method="post">
+                @Html.EditorFor(model => model.User_Name, new { htmlAttributes = new { @class = "cntrol col -md-2" } })
+                <span class="icons i3"><i class="fa fa-user" aria-hidden="true"></i></span>
+                @Html.EditorFor(model => model.User_Email, new { htmlAttributes = new { @class = "cntrol col -md-2" } })
+                <span class="icons i4"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                @Html.EditorFor(model => model.User_Password, new { htmlAttributes = new { @class = "cntrol col -md-2" } })
+                <span class="icons i5"><i class="fa fa-key" aria-hidden="true"></i></span>
+                @Html.EditorFor(model => model.Re_Password, new { htmlAttributes = new { @class = "cntrol col -md-2" } })
+                <span class="icons i6"><i class="fa fa-key" aria-hidden="true"></i></span>
+                <input type="submit" value="Register" name="register">
+            </form>
+        </div>
+        <div class="clear"></div>
+        <!-- //main -->
+        <!--footer-->
+        
+        <!--//footer-->
+    </div>
+</div>
+
+
+<!--scripts-->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- particles-JavaScript -->
+<script src="js/particles.min.js"></script>
+<script>
+    window.onload = function () {
+        Particles.init({
+            selector: '#myCanvas',
+            color: '#eba7a7',
+            connectParticles: true,
+            minDistance: 90
+        });
+    };
+</script>
+
+<!-- //particles-JavaScript -->
+<!--//scripts-->

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Model2StoreContainer" CdmEntityContainer="Entities3">
+    <EntitySetMapping Name="tbl_img">
+      <EntityTypeMapping TypeName="Model2.tbl_img">
+        <MappingFragment StoreEntitySet="tbl_img">
+          <ScalarProperty Name="Img_Id" ColumnName="Img_Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="city" ColumnName="city" />
+          <ScalarProperty Name="img" ColumnName="img" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
